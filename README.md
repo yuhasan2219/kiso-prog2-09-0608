@@ -14,7 +14,27 @@ git clone https://github.com/自分のユーザー名/kiso-prog2-09-0608.git
 cd kiso-prog2-09-0608
 ```
 
-3. `ex_write.c` から順に `/* TODO */` の部分を埋めてコンパイル・実行する
+3. 以下の順にコンパイル・実行して確認する（各ファイルの先頭コメントに手順あり）
+
+   **① デモ（動かして確認するだけ）**
+   ```
+   step0_no_file.c  → step0_with_file.c
+   step1_write.c    → step1_append.c
+   step2_no_null_check.c → step2_with_null_check.c
+   step3_no_fclose.c → step3_with_fclose.c
+   step4_read_one.c  → step4_read_all.c → step5_all.c
+   ```
+
+   **② 演習（`/* TODO */` の部分を自分で埋める）**
+   ```
+   ex_write.c → ex_read.c
+   ```
+
+   **③ 発展（余った時間で挑戦）**
+   ```
+   task1_log.c → task1_count.c → task2_max.c → task3_copy.c
+   ```
+
 4. 全部終わったら **Push** する
 
 ```bash
