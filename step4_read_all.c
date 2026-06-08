@@ -1,6 +1,11 @@
 // step4_read_all.c — 全行読む
-// fscanf の戻り値 = 読めた変数の個数
-// 3個読めなくなったらループ終了（ファイルの終端）
+//
+// 【手順】
+//   1. 先に step3_with_fclose を実行して sensor.csv を作っておく
+//   2. コンパイル: gcc step4_read_all.c -o step4_read_all
+//   3. 実行:       ./step4_read_all
+//   4. 確認:       3行全部表示されるか？
+//   5. 考える:     while の条件「== 3」の 3 はなぜ？
 #include <stdio.h>
 
 int main(void) {

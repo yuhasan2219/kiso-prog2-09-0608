@@ -57,3 +57,21 @@ gcc ex_write.c -o ex_write
 ## 参考資料
 
 授業資料（lesson-09-ref.md）を見ながら進めてよい。
+
+---
+
+## printf / fprintf のフォーマット指定子
+
+| 指定子 | 対応する型 | 意味 | 覚え方 |
+|--------|----------|------|--------|
+| `%s` | `char[]` / `char *` | 文字列 | **S**tring |
+| `%d` | `int` | 10進整数 | **D**ecimal |
+| `%c` | `char` | 1文字 | **C**haracter |
+| `%f` | `float` / `double` | 実数 | **F**loating point |
+
+```c
+printf("%s は %d°C、湿度 %.1f%%\n", "教室", 25, 60.5);
+//      %s       %d         %f
+//       ↑       ↑           ↑
+//      char[]  int         float
+```
